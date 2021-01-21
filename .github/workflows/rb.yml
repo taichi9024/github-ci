@@ -33,7 +33,6 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Run tests
       run:
-        sudo apt-get -yqq install libsqlite3-dev
         bundle install -j4
         bin/rails db:create
         bin/rails db:migrate
