@@ -33,5 +33,5 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Run tests
       run:
-        yarn install 
+        bundle install -j4
         bundle exec rake
