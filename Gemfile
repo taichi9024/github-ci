@@ -24,6 +24,8 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'rubocop', require: false
 gem 'rubocop-rails', require: false
+gem "selenium-webdriver"
+gem "chromedriver-helper"
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
