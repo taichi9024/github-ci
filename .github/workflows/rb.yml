@@ -34,7 +34,7 @@ jobs:
     - name: Run tests
       run:
         sudo apt-get -yqq install libsqlite3-dev
-        bundle intall -j4
+        bundle install -j4
         bin/rails db:create
         bin/rails db:migrate
         bin/yarn install
