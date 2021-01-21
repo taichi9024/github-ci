@@ -33,7 +33,7 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Run tests
       run:
-        bundle install -j4
+        bundle install --jobs 4
         bin/rails db:create
         bin/rails db:migrate
         bin/yarn install
