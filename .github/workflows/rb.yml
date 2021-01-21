@@ -14,7 +14,7 @@ on:
     branches: [ master ]
 
 jobs:
-  test:
+  build:
 
     runs-on: ubuntu-latest
     strategy:
@@ -33,5 +33,10 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Run tests
       run:
-        yarn add bundle exec rake
-        bundle exec rake
+        sudo apt-get -yqq install libsqlite3-dev
+        bundle intall -j4
+        bin/rails db:create
+        bin/rails db:migrate
+        bin/yarn install
+        bin/rails test
+        bin/rails test:system
