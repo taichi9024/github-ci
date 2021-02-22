@@ -24,7 +24,6 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'rubocop', require: false
 gem 'rubocop-rails', require: false
-gem "searchkick"
 gem "kaminari"
 gem "searchkick"
 gem "devise"

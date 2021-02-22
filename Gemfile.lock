@@ -62,8 +62,6 @@ GEM
       zeitwerk (~> 2.3)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    archive-zip (0.12.0)
-      io-like (~> 0.3.0)
     ast (2.4.1)
     bcrypt (3.1.16)
     bindex (0.8.1)
@@ -80,9 +78,6 @@ GEM
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
     childprocess (3.0.0)
-    chromedriver-helper (2.1.1)
-      archive-zip (~> 0.10)
-      nokogiri (~> 1.8)
     concurrent-ruby (1.1.8)
     crass (1.0.6)
     devise (4.7.3)
@@ -91,12 +86,12 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
-    elasticsearch (7.10.1)
-      elasticsearch-api (= 7.10.1)
-      elasticsearch-transport (= 7.10.1)
-    elasticsearch-api (7.10.1)
+    elasticsearch (7.11.1)
+      elasticsearch-api (= 7.11.1)
+      elasticsearch-transport (= 7.11.1)
+    elasticsearch-api (7.11.1)
       multi_json
-    elasticsearch-transport (7.10.1)
+    elasticsearch-transport (7.11.1)
       faraday (~> 1)
       multi_json
     erubi (1.10.0)
@@ -111,7 +106,6 @@ GEM
     hashie (4.1.0)
     i18n (1.8.7)
       concurrent-ruby (~> 1.0)
-    io-like (0.3.1)
     jbuilder (2.10.1)
       activesupport (>= 5.0.0)
     kaminari (1.2.1)
@@ -215,7 +209,7 @@ GEM
       rack (>= 1.1)
       rubocop (>= 0.90.0, < 2.0)
     ruby-progressbar (1.11.0)
-    ruby2_keywords (0.0.2)
+    ruby2_keywords (0.0.4)
     rubyzip (2.3.0)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
@@ -283,11 +277,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
   capybara (>= 3.26)
-<<<<<<< HEAD
-  chromedriver-helper
-=======
   devise
->>>>>>> dev
   jbuilder (~> 2.7)
   kaminari
   listen (~> 3.3)
