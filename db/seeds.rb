@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts "start seeding"
+30.times do |i|
+    User.create(name: "name#{i}",
+                age: "#{i}")
+end
+
+puts "end seeding"

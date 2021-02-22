@@ -24,6 +24,10 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'rubocop', require: false
 gem 'rubocop-rails', require: false
+gem "searchkick"
+gem "kaminari"
+gem "searchkick"
+gem "devise"
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
